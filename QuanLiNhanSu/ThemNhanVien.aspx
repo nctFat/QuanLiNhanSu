@@ -61,7 +61,9 @@
         <asp:DropDownList ID="ddlphongban" runat="server" DataSourceID="dsPhongBan" DataTextField="TenPhong" DataValueField="MaPhong" AutoPostBack="true"></asp:DropDownList>
     </div>
             </div>
-            <asp:SqlDataSource ID="dsPhongBan" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString8 %>" ProviderName="<%$ ConnectionStrings:QLNhanVienConnectionString8.ProviderName %>" SelectCommand="SELECT * FROM [PhongBan]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="dsPhongBan" runat="server" ConnectionString="<%$ ConnectionStrings:QLNhanVienConnectionString8 %>" 
+                ProviderName="<%$ ConnectionStrings:QLNhanVienConnectionString8.ProviderName %>" SelectCommand="SELECT * FROM [PhongBan]">
+            </asp:SqlDataSource>
             <asp:Button ID="btnSave" runat="server"   CssClass="btn btn-primary" Text="Thêm" OnClick="btnSave_Click" />
 </form>
        <asp:Label ID="lblketqua" runat="server" Text=""></asp:Label>
